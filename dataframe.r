@@ -4,22 +4,34 @@
 
 # Create a dataframe
 d=data.frame(subjectID=1:5,gender=c("M","F","F","M","F"),score=c(8,3,6,5,5))
-d
+
+
+## use buid in dataframe mtcars 
+
 
 # Number of rows
-nrow(d)
+nrow(mtcars)
 
 # Number of columns
-ncol(d)
+ncol(mtcars)
 
 # Check the attributes
-attributes(d)
+attributes(mtcars)
 
 # Call a particular cell in a dataframe
-d[2,1]
-d[1,2]
+mtcars[2, 1]
+mtcars[1, 2]
+
+# Data Frame Column Vector
+# to retrieve the ninth column vector of the built-in data set mtcars
+# to achieve we can use three aproaches
+mtcars[[9]]
+mtcars$am
+mtcars[, am]
+
 
 # Display dataframe
 View(d)
+
 # Edit dataframe
 edit(d)

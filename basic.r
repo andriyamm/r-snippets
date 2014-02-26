@@ -1,3 +1,10 @@
+# get current working directory
+getwd()
+
+# set working directory
+setwd("/home/amm/workspace/R/test")
+
+
 # assignments
 x <- 1
 
@@ -37,6 +44,27 @@ isTRUE(x)
 
 ### ###
 
+#NA
+#NaN
+#NULL
+#Inf
+#-Inf
+
+x <- c(1,2,NA,30, 1)
+
+is.na(x)
+#[1] FALSE FALSE  TRUE FALSE FALSE
+
+is.nan(x)
+#[1] FALSE FALSE FALSE FALSE FALSE
+
+x <- c(1,2, NaN, NA, 30, 1)
+is.na(x)
+#[1] FALSE FALSE  TRUE  TRUE FALSE FALSE
+
+is.nan(x)
+#[1] FALSE FALSE  TRUE FALSE FALSE FALSE
+
 
 ### Work with Pakages ###
 
@@ -44,7 +72,10 @@ isTRUE(x)
 install.packages("languageR") ## Need to specify CRAN the 1st time
 
 # Load package
-library(languageR)
+library(packageName)
+require(packageName)
+
+
 
 # Gives a list of attached packages (see library), and R objects, usually data.frames.
 search()
