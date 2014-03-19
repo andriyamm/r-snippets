@@ -29,6 +29,10 @@ mtcars[[9]]
 mtcars$am
 mtcars[, am]
 
+# To retrieve a data frame slice with the two columns mpg and hp
+mtcars[c(1, 2)]
+mtcars[c("mpg", "cyl")]
+
 
 # Display dataframe
 View(d)
