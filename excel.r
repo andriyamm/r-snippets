@@ -2,7 +2,7 @@
 
 ### Reading data from excel :begin ###
 
-
+# read using gdata
 require(gdata)
 myDf <- read.xls ("myfile.xlsx", sheet = 1, header = TRUE)
 
