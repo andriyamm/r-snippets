@@ -1,3 +1,5 @@
+# R 3.0.3
+
 # get current working directory
 getwd()
 
@@ -71,15 +73,17 @@ is.nan(x)
 
 # Download and install packages
 install.packages("languageR") ## Need to specify CRAN the 1st time
+# install multiply packages
+install.packages(c("languageR", "slidify", "devtools"))
 
 # Load package
 library(packageName)
 require(packageName)
-
-
 
 # Gives a list of attached packages (see library), and R objects, usually data.frames.
 search()
 
 # Find (or retrieve) details of all packages installed in the specified libraries.
 installed.packages()
+
+availale.packages()
