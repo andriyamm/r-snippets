@@ -2,7 +2,8 @@
 getwd()
 
 # set working directory
-setwd("/home/amm/workspace/R/test")
+setwd("/home/amm/workspace/R/sone4ko")
+setwd("f:/workspace/R/sone4ko")
 
 
 # assignments
