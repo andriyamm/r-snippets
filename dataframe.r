@@ -3,8 +3,17 @@
 ## Usually called with read.table()
 
 # Create a dataframe
-d=data.frame(subjectID=1:5,gender=c("M","F","F","M","F"),score=c(8,3,6,5,5))
+d <- data.frame(subjectID=1:5,gender=c("M","F","F","M","F"),score=c(8,3,6,5,5))
 
+
+# Read the first 2 rows of the data frame 
+csv <- read.table("hw1_data.csv", header = TRUE, sep=",", fill = TRUE, nrows=2)
+
+# Extract the first 2 rows of the data frame 
+head(csv, 2)
+
+# Extract the last 2 rows of the data frame 
+tail(csv, 2)
 
 ## use buid in dataframe mtcars 
 
@@ -17,6 +26,12 @@ ncol(mtcars)
 
 # Check the attributes
 attributes(mtcars)
+
+# columns name
+colnames(mtcars)
+
+
+
 
 # Call a particular cell in a dataframe
 mtcars[2, 1]
